@@ -31,8 +31,9 @@ int main(void)
  
  // string 
  
- //printf("%s\n", Stars);
- //printf("%.*s\n", 3, Stars);// minmal: 0, maximal:3, * acceptes the integer 3 
+ printf("%s\n", Stars);
+ printf("%0.*s\n", 3, Stars);// minmal: 0, maximal:3, * acceptes the integer 3 
+ printf("%0.3s\n", Stars);// minmal: 0, maximal:3, * acceptes the integer 3 
  
  return 0;
 }

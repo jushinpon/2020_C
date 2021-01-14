@@ -23,32 +23,32 @@ int main(){
 
 // deal with the grade part
 		
-//	for (int i=0;i<10000;i++){
-//		fscanf(fpr,"%d",&id[i]);// use the pointer to read
-//	    fprintf(fpw,"%d",id[i]);
-//		printf ("***id: %d ",id[i]);		
-//			for (int j=0;j<4;j++){
-//				fscanf(fpr,"%f",&grade[i][j]);
-//				
-//				printf("\t%5.1f",grade[i][j]);
-//				fprintf(fpw,"\t%5.1f",grade[i][j]);
-//				// change to the beginning of the next line
-//				if(j == 3){fprintf(fpw,"\n");printf("\n");}// change to the next line
-//			}
-//	}
-    
-	while(fscanf(fpr,"%d",&id[counter]) != EOF){//EOF indicates fscanf reads error!
-		fprintf(fpw,"%d",id[counter]);
-		printf ("***id: %d ",id[counter]);		
+	for (int i=0;i<10000;i++){
+		fscanf(fpr,"%d",&id[i]);// use the pointer to read
+	    fprintf(fpw,"%05d",id[i]);
+		printf ("***id: %d ",id[i]);		
 			for (int j=0;j<4;j++){
-				fscanf(fpr,"%f",&grade[counter][j]);				
-				printf("\t%5.1f",grade[counter][j]);
-				fprintf(fpw,"\t%5.1f",grade[counter][j]);
+				fscanf(fpr,"%f",&grade[i][j]);
+				
+				printf("\t%5.1f",grade[i][j]);
+				fprintf(fpw,"\t%5.1f",grade[i][j]);
 				// change to the beginning of the next line
-				if(j == 3){fprintf(fpw,"\n");printf("\n");}// change to the next linefprintf(fpw,"%d   %f\n",id[counter],Egrade[counter]);	
-			}					
-		counter++;
-	}	
+				if(j == 3){fprintf(fpw,"\n");printf("\n");}// change to the next line
+			}
+	}
+  
+//	while(fscanf(fpr,"%d",&id[counter]) != EOF){//EOF indicates fscanf reads error!
+//		fprintf(fpw,"%d",id[counter]);
+//		printf ("***id: %d ",id[counter]);		
+//			for (int j=0;j<4;j++){
+//				fscanf(fpr,"%f",&grade[counter][j]);				
+//				printf("\t%5.1f",grade[counter][j]);
+//				fprintf(fpw,"\t%5.1f",grade[counter][j]);
+//				// change to the beginning of the next line
+//				if(j == 3){fprintf(fpw,"\n");printf("\n");}// change to the next linefprintf(fpw,"%d   %f\n",id[counter],Egrade[counter]);	
+//			}					
+//		counter++;
+//	}	
 		
 	fclose(fpr);// remember to close the handle!!!	
 	fclose(fpw);
@@ -57,6 +57,6 @@ int main(){
 
 //	Quiz:
 //
-//      1. Output a file including Id, original grade, adjusted grade, and the difference between the previous two
+//      1. Output a file including Id, original grade, adjusted grade (square root*10, and put it with original grade by ()), for example, 36(60), 36 is original and 60 is the modified grade 
 //      2. Please transfer it to a 等第制 and write the Id, original grade, and  等第制 to a file (for a loop control)
 //      3. online look up request

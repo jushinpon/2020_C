@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h> //atoi,system functions
 #include <time.h>
-int twoDarray(FILE **fpw ,int row, int col,float twoD[][col-1]);
+//int twoDarray(FILE **fpw ,int row, int col,float twoD[][col-1]);
+int twoDarray(FILE *fpw ,int row, int col,float twoD[][col-1]);
 
 int main(){
 	FILE *inputpr;
@@ -58,16 +59,39 @@ int main(){
 			//	if(j == col-2){fprintf(fpw,"\n");}//change to the next line
 			}
 	}
-	twoDarray(&fpw,row,col,grade);	
+	//twoDarray(&fpw,row,col,grade);	
+	twoDarray(fpw,row,col,grade);	
 	fclose(fpr);// remember to close the handle!!!	
 	fclose(fpw);
 		
 	return 0;	
 }
 
-int twoDarray(FILE **fpw,int row, int col,float twoD[][col-1]){
+//int twoDarray(FILE **fpw,int row, int col,float twoD[][col-1]){
+//		for (int i=0;i<row;i++){
+//			printf("Row: %05d ",i);
+//			for (int j=0;j<col-1;j++){
+//				printf("\t%5.1f",twoD[i][j]);
+//				if(j == col-2){printf("\n");}// change to the next line
+//			}
+//		}
+//		
+//		for (int i=0;i<row;i++){
+//			//fscanf(fpr,"%d",&id[i]);// use the pointer to read
+//		    fprintf(*fpw,"%05d",i+1);				
+//				for (int j=0;j<col-1;j++){
+//					//fscanf(fpr,"%f",&grade[i][j]);				
+//					fprintf(*fpw,"\t%5.1f",twoD[i][j]);
+//					// change to the beginning of the next line
+//					if(j == col-2){fprintf(*fpw,"\n");}//change to the next line
+//				}
+//		}	
+//	return 0;
+//}
+
+int twoDarray(FILE *fpw,int row, int col,float twoD[][col-1]){
 		for (int i=0;i<row;i++){
-			printf("Row: %d ",i);
+			printf("Row: %05d ",i);
 			for (int j=0;j<col-1;j++){
 				printf("\t%5.1f",twoD[i][j]);
 				if(j == col-2){printf("\n");}// change to the next line
@@ -76,12 +100,12 @@ int twoDarray(FILE **fpw,int row, int col,float twoD[][col-1]){
 		
 		for (int i=0;i<row;i++){
 			//fscanf(fpr,"%d",&id[i]);// use the pointer to read
-		    fprintf(*fpw,"%d",i+1);				
+		    fprintf(fpw,"%05d",i+1);				
 				for (int j=0;j<col-1;j++){
 					//fscanf(fpr,"%f",&grade[i][j]);				
-					fprintf(*fpw,"\t%5.1f",twoD[i][j]);
+					fprintf(fpw,"\t%5.1f",twoD[i][j]);
 					// change to the beginning of the next line
-					if(j == col-2){fprintf(*fpw,"\n");}//change to the next line
+					if(j == col-2){fprintf(fpw,"\n");}//change to the next line
 				}
 		}	
 	return 0;

@@ -18,15 +18,15 @@ int main(){
 	return 0;
 }
 
-/*
-void swap(int a, int b){ 
-   int s = a;
-	   a = b;
-	   b = s;
-     printf("a:%d, at address:%p\n",a,&a);
-	 printf("b:%d, at address:%p\n\n",b,&b);  
-}
-*/
+
+//void swap(int a, int b){ 
+//   int s = a;
+//	   a = b;
+//	   b = s;
+//     printf("a:%d, at address:%p\n",a,&a);
+//	 printf("b:%d, at address:%p\n\n",b,&b);  
+//}
+
 
 void swap(int *a, int *b){ 
 	int s = *a;

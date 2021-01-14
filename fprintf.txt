@@ -1,0 +1,3 @@
+
+String: world, Integer: 345
+String: hello, Integer: 123

@@ -10,12 +10,13 @@ int main(void) {
 	printf("PI value is %f\n",PI);
     printf("\nAge\tScore\tLevel\n");
     printf("%d\t%f\t%d\n", ageOfStudent, scoreOfStudent, levelOfStudent);
-    printf ("¦¶°VÄP\n");// need to check the decode setting of your screen
+    printf ("Shin_pon Ju\n");// need to check the decode setting of your screen
     ageOfStudent = 5;
     scoreOfStudent = 80.0;
     levelOfStudent = 'B';
     printf("\nAge\tScore\tLevel\n");
     printf("%d\t%.2f\t%c\n", ageOfStudent, scoreOfStudent, levelOfStudent);
+    printf("Pointer:%p\t%p\t%p\n", &ageOfStudent, &scoreOfStudent, &levelOfStudent);
 
     return 0;
 }

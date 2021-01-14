@@ -1,0 +1,2 @@
+What you read by fscanf: 2.000000
+What you read by fscanf: 4.000000

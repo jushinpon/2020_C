@@ -1,7 +1,29 @@
+//Note: 
+//1. Name of a 1D array represents address of the first element in the 1D array (Check pointer4array_sub.c)
+//2. Name of a 2D array represents address of the first row in the 2D array,
+//   so you need to indicate the element number (column number) in each one-dimensional row array
+
+//2D Array:
+//- 2D array is a collection of homogeneous data elements arranged in rows and columns
+//- 2D array is an array of 1D arrays
+
 #include <stdio.h>
 #include <stdlib.h> //atoi,system functions
 #include <time.h>
-int twoDarray(int row, int col,float twoD[][col-1]);
+int twoDarray(int row, int col,float twoD[][col-1]){
+//int twoDarray(int row, int col,float twoD[row][col-1]){
+	printf ("twoD: %p\n",twoD);
+	printf ("twoD[0][0]: %p\n",&twoD[0][0]);
+	printf ("twoD[0]: %p\n",twoD[0]);
+	//	for (int i=0;i<row;i++){
+	//		printf("Row: %d ",i);
+	//		for (int j=0;j<col-1;j++){
+	//			printf("\t%5.1f",twoD[i][j]);
+	//			if(j == col-2){printf("\n");}// change to the next line
+	//		}
+	//	}	
+	return 0;
+}
 
 int main(){
 	FILE *inputpr;
@@ -61,17 +83,23 @@ int main(){
 		
 	fclose(fpr);// remember to close the handle!!!	
 	fclose(fpw);
+	printf ("grade: %p\n",grade);
+	printf ("grade[0][0]: %p\n",&grade[0][0]);
+	printf ("grade[0]: %p\n",grade[0]);//pointer of the first one-dimensional array
 	twoDarray(row,col,grade);	
 	return 0;	
 }
 
-int twoDarray(int row, int col,float twoD[][col-1]){
-		for (int i=0;i<row;i++){
-			printf("Row: %d ",i);
-			for (int j=0;j<col-1;j++){
-				printf("\t%5.1f",twoD[i][j]);
-				if(j == col-2){printf("\n");}// change to the next line
-			}
-		}	
-	return 0;
-}
+//int twoDarray(int row, int col,float twoD[][col-1]){
+//	printf ("twoD: %p\n",twoD);
+//	printf ("twoD[0][0]: %p\n",twoD[0][0]);
+//	printf ("twoD[0]: %p\n",twoD[0]);
+//	//	for (int i=0;i<row;i++){
+//	//		printf("Row: %d ",i);
+//	//		for (int j=0;j<col-1;j++){
+//	//			printf("\t%5.1f",twoD[i][j]);
+//	//			if(j == col-2){printf("\n");}// change to the next line
+//	//		}
+//	//	}	
+//	return 0;
+//}

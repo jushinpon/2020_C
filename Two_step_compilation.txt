@@ -1,0 +1,10 @@
+gcc -c HelloWorld.c
+gcc -o HelloWorld  HelloWorld.o
+
+
+or 
+
+one-step
+
+1.gcc HelloWorld.c (a.out for all source codes, so not good for recognizing your source code!)
+2.gcc -o HelloWorld HelloWorld.c (better)

@@ -4,10 +4,21 @@ int main(void) {
     
 	int a = 9;
     int *ap = &a;//& is the operator to get the address
-    int b = *ap; //--->*Pointer get the value in the address (Pointer), don't be confused!!!
+    //int b = *ap; //--->*Pointer get the value in the address (Pointer), don't be confused!!!
+    int *b = ap; 
 
-    printf("a: %d, at address: %p or %p",a,ap,&a);
-	
+    printf("1. a: %d, at address: %p or %p\n",a,ap,&a);
+    //printf("1. b: %d, at address: %p\n\n\n",b,&b);
+    printf("1. b: %d, at address: %p\n\n\n",*b,b);
+    
+   // b=10;
+   // printf("2. a: %d, at address: %p or %p\n",a,ap,&a);
+   // printf("2. b: %d, at address: %p\n",b,&b);
+   
+    *b = 20;
+    printf("2. a: %d, at address: %p or %p\n",a,ap,&a);
+    printf("2. b: %d, at address: %p\n",*b,b);
+    
 	
 //	int var = 10;
 //    printf("var's value: %d\n", var);

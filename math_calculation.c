@@ -5,20 +5,20 @@ int main()
    int i;// counter
    float A,B,C,D;
    int remainder;
-//   A=1.2;
-//   B= exp(A);
-//   C= pow(9,1/2);// try 1./2. // If you want to have your code effective, use "multiply" instead of power if possible 
-//   D= sqrt(9);
-//   remainder = 5%3; // this is frequently used in looping
-//   printf("%f %f %f %f %f\n",A,B,C,D,(float)remainder);//(int) can be used to convert a float (%f) to int(%d)
+   //A=1.2;
+   //B= exp(A);
+   //C= pow(9,1/2);// try 1./2. // If you want to have your code effective, use "multiply" instead of power if possible 
+   //D= sqrt(9);
+   //remainder = 5%3; // this is frequently used in looping
+   //printf("%f %f %f %f %f\n",A,B,C,D,(float)remainder);//(int) can be used to convert a float (%f) to int(%d)
 
 // Trigonometric function **** in radial
    //....... sin(x), cos(x) --> x is in radian (£k=180«×)
       
-      A = sin(180.);
-      B = sin(3.1415926);
-      C = acos(-1);   
-      D = sin(C);
+   //   A = sin(180.);
+   //   B = sin(3.1415926);
+   //   C = acos(-1);   
+   //   D = sin(C);
 	printf("%f %f %f %f \n",A,B,C,D); 
 // you can now convert degree to radin or revsersely by acos(-1)/180. (not 180, using "180." is better.)	
    return 0;

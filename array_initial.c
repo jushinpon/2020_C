@@ -10,8 +10,8 @@ int main(void)
  //int a[3] = {2,3,4};
  //float b[3] = {3.12,5.24,2.675};
  
- int a[3] = {1};
- float b[3] = {1.0};
+ int a[3] = {0};
+ float b[3] = {0.0};
  
  // only the zero values can be set for the initial values
  // for other values, you need to use the loop process to assign values for all elements 

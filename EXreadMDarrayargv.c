@@ -7,7 +7,9 @@ int main(int argc, char *argv[]){
 	char header[col][255];	
 	int id[row],temp1,counter = 0;//can't be initialized first
 	float grade[row][col-1],temp2;//can't be initialized first
-
+    printf ("%d %s\n",argc,argv[0]);
+    int c=getchar();
+    
 // initialized	
 	for (int i=0;i<row;i++){
 		id[i] = 0;
