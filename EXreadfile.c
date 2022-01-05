@@ -11,8 +11,8 @@ int main(){
 	
 	fpr = fopen("./readtest.txt","r");
 	fpw = fopen("./printout.txt","w");// a for "append"
-    //printf ("Read file pointer: %p\n",fpr);// ram address having the content of "readtest.txt"
-    //printf ("Write file pointer: %p\n",fpw);// ram address you are ready to write the content into "printout.txt"
+    printf ("Read file pointer: %p\n",fpr);// ram address having the content of "readtest.txt"
+    printf ("Write file pointer: %p\n",fpw);// ram address you are ready to write the content into "printout.txt"
 	
 	//fgets(buff, 255, fpr);// fgets, ready to read the next line when done. the change line symbol also be read by buff
 	//printf("What you read by fgets: %s\n",buff);

@@ -18,7 +18,7 @@
      00017      30.0
      00018       5.0
      00019      90.8
-     00020     Output a file including Id, original grade, adjusted grade (square root*10), and the difference between the previous two  9.8
+     00020      9.8
      00021       4.0
      00022       8.5
      00023      55.9

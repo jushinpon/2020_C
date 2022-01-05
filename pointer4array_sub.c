@@ -1,7 +1,7 @@
 #include <stdio.h>
-//int addone(int m,int arr[],int afteradd[]){
+int addone(int m,int arr[],int afteradd[]){
 //int addone(int m,int arr[m],int afteradd[m]){
-int addone(int m,int *arr,int *afteradd){
+//int addone(int m,int *arr,int *afteradd){
 	printf ("m value: %d\n",m);
 	printf ("arr pointer: %p\n",arr);
 	for (int i= 0;i<m;i++){

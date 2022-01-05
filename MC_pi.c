@@ -2,8 +2,10 @@
 #include <stdlib.h> 
 #include <time.h> 
 # include <math.h>
-int main(int argc, char *argv[]) { 
-    int N = atoi(argv[1]);// read iteration time from command line
+//int main(int argc, char *argv[]) { 
+int main() { 
+    //int N = atoi(argv[1]);// read iteration time from command line 
+    int N = 500000;// iteration number 
 	printf ("time(0) is %ld\n",time(0));// seconds from Jan. 01 1970 (epoch time)
 	srand(time(NULL));// time(0) is also ok    
     
@@ -22,7 +24,7 @@ int main(int argc, char *argv[]) {
         }
 		//printf("After interation %d, PI = %f\n",i,(double) 4 * sum / (N));
     }
-	printf("PI = %f\n", (double) 4 * sum / (N - 1));
+	printf("PI = %f\n", (double) 4 * sum / N);
 // Please make a plot to tell when Pi is close to a constant
      
     //while(temp > error){

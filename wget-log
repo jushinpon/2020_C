@@ -1,0 +1,16 @@
+--2021-10-27 09:00:21--  https://drive.google.com/file/d/1qJpMjgqvnOo3lVC_YAz1rqaUoJWOx605/view?usp=drive_web
+Resolving drive.google.com (drive.google.com)... 172.217.24.14, 2404:6800:4012::200e
+Connecting to drive.google.com (drive.google.com)|172.217.24.14|:443... connected.
+HTTP request sent, awaiting response... 302 Moved Temporarily
+Location: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://drive.google.com/file/d/1qJpMjgqvnOo3lVC_YAz1rqaUoJWOx605/view?usp%3Ddrive_web&followup=https://drive.google.com/file/d/1qJpMjgqvnOo3lVC_YAz1rqaUoJWOx605/view?usp%3Ddrive_web [following]
+--2021-10-27 09:00:22--  https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://drive.google.com/file/d/1qJpMjgqvnOo3lVC_YAz1rqaUoJWOx605/view?usp%3Ddrive_web&followup=https://drive.google.com/file/d/1qJpMjgqvnOo3lVC_YAz1rqaUoJWOx605/view?usp%3Ddrive_web
+Resolving accounts.google.com (accounts.google.com)... 172.217.160.109, 2404:6800:4012:3::200d
+Connecting to accounts.google.com (accounts.google.com)|172.217.160.109|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘view?usp=drive_web’
+
+view?usp=drive_web                            [<=>                                                                                   ]       0  --.-KB/s               view?usp=drive_web                            [ <=>                                                                                  ]  89.11K  --.-KB/s    in 0.02s   
+
+2021-10-27 09:00:22 (5.53 MB/s) - ‘view?usp=drive_web’ saved [91249]
+

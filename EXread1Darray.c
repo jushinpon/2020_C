@@ -11,24 +11,24 @@ int main(){
 	fpr = fopen("./grade_sheet.txt","r");
 	fpw = fopen("./grade_out.txt","w");
 	fscanf(fpr,"%s %s",head1,head2);// read any if not \n (\n is the option to change to a new line
-	//fscanf(fpr,"%*[^\n]\n");        
+	//fscanf(fpr,"%*[^\n]");        
 	printf("\nWhat you read by fscanf: %s %s\n",head1,head2);// character array is a pointer	
 	fprintf(fpw,"%s   %s\n",head1,head2);
 //	int c=getchar();// sleep a while for check
-//	for (int i=0;i<101;i++){
-//		ifscan = fscanf(fpr,"%d %f\n",&id[i],&Egrade[i]);// use the pointer to read
-//	    fprintf(fpw,"%05d\t%-5.1f\n",id[i],Egrade[i]);
-//		printf("i: %d, %d\t\t%-5.1f\n",i,id[i],Egrade[i]);
-//		printf(" ifscan value: %d\n",ifscan);
-//	}
+	for (int i=0;i<100;i++){
+		fscanf(fpr,"%d %f\n",&id[i],&Egrade[i]);// use the pointer to read
+	    fprintf(fpw,"%05d\t%-5.1f\n",id[i],Egrade[i]);
+		printf("i: %d, %d\t\t%-5.1f\n",i,id[i],Egrade[i]);
+		//printf(" ifscan value: %d\n",ifscan);
+	}
 //		printf(" EOF value: %d\n",EOF);
     	
 	
-	while(fscanf(fpr,"%d %f",&temp1,&temp2)!= EOF){	//EOF: end-of-file (also mean reading error, need to do one more loop after the last row		
-		fprintf(fpw,"%05d\t%-5.1f\n",temp1,temp2);	
-		printf("%d,%d\t\t%5.1f\n",counter,temp1,temp2);		
-		counter++;
-	}
+//	while(fscanf(fpr,"%d %f",&temp1,&temp2)!= EOF){	//EOF: end-of-file (also mean reading error, need to do one more loop after the last row		
+//		fprintf(fpw,"%05d\t%-5.1f\n",temp1,temp2);	
+//		printf("%d,%d\t\t%5.1f\n",counter,temp1,temp2);		
+//		counter++;
+//	}
 			
 	fclose(fpr);// remember to close the handle!!!	
 	fclose(fpw);
