@@ -6,7 +6,7 @@ int main(){
 	char header[col][255];	
 	int id[row],temp1,counter = 0;//can't be initialized first
 	float grade[row][col-1],temp2;//can't be initialized first
-
+     
 // initialized	
 	for (int i=0;i<row;i++){
 		id[i] = 0;

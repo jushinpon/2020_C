@@ -18,7 +18,7 @@ printf ("c address: %p\n",&c);
 //*b = a;
 //c = *b;
 //printf("1. a = %d, pointer b = %d, c = %d \n",a,*b,c);
-//*b = *b + 1;
+*b = *b + 1;
 //c = *b;
 //printf("2. a= %d, pointer b = %d, c = %d\n",a,*b,c);
 

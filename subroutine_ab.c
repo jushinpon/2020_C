@@ -4,8 +4,8 @@
 //gcc -c subb.c suba.c subroutine_ab.c 
 //gcc -o sub.out  subb.o suba.o subroutine_ab.o
 //./sub.out
-void b(void);
-void a(void);
+int b(void);
+int a(void);
 
 void main(void)
 {

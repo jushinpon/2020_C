@@ -17,7 +17,7 @@
 //}
 //
 
-void addone(int* n){ // * address in ram
+void addone(int *n){ // * address in ram
 	*n = *n+1; //* the operator to get the value in the address!!!!!!
 	printf("np in function addone: %d\n",n);
 }

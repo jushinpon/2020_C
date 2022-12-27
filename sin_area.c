@@ -11,12 +11,23 @@ int main()
    
    fp = fopen("./sin.txt","w");
    
-   fprintf(fp,"rad sinbararea\n");
-   //fprintf(fp,"rad sin cos\n");
-	for(i=1;i<=tot;i++){
+   fprintf(fp,"rad sin\n");
+   //rad = increment*0;
+   //fprintf(fp,"%f %f\n",rad,sin(rad));
+   //
+   //rad = increment*1.0;
+   //fprintf(fp,"%f %f\n",rad,sin(rad));
+   //
+   //rad = increment*2.0;
+   //fprintf(fp,"%f %f\n",rad,sin(rad));
+   
+//   fprintf(fp,"rad sinbararea\n");
+//   //fprintf(fp,"rad sin cos\n");
+	for(i=0;i<=tot;i++){
 		rad = increment*(float)i;
 		//fprintf(fp,"%f %f %f\n",rad,sin(rad),cos(rad));
-		fprintf(fp,"%f %f\n",rad,sin(rad)*increment);
+		fprintf(fp,"%f %f\n",rad,sin(rad));
+		//fprintf(fp,"%f %f\n",rad,sin(rad)*increment);
 	}
       
     fclose(fp); 	

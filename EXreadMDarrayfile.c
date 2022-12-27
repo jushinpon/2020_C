@@ -1,16 +1,17 @@
 #include <stdio.h>
-#include <stdlib.h> //atoi,system functions
-#include <time.h>
+//#include <stdlib.h> //atoi,system functions
+//#include <time.h>
 int main(){
 	FILE *inputpr;
 	int row = 0,col = 0;
 // just a input file, but not clear enough	
 	
-	//inputpr = fopen("./input.txt","r");// ******* make sure you have created this file first!!!!!
-	//fscanf(inputpr,"%d %d",&row, &col);
-	//printf("row and col:%d, %d\n",row, col);
-	//fclose(inputpr);
+	inputpr = fopen("./input.txt","r");// ******* make sure you have created this file first!!!!!
+	fscanf(inputpr,"%d %d",&row, &col);
+	printf("row and col:%d, %d\n",row, col);
+	fclose(inputpr);
 	//system("pause");
+	getchar();
 	
 	
 // read parameters from a input file with clear definitions for all parameters	
@@ -22,7 +23,7 @@ int main(){
 	fscanf(inputpr,"%d",&col);
 	printf("row and col:%d, %d\n",row, col);
 	fclose(inputpr);
-	system("pause");
+	//system("pause");
 
 
 

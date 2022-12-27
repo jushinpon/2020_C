@@ -24,7 +24,7 @@ int main() {
         }
 		//printf("After interation %d, PI = %f\n",i,(double) 4 * sum / (N));
     }
-	printf("PI = %f\n", (double) 4 * sum / N);
+	printf("PI = %f\n",  (float) (sum)/(float) (N) * 4.0 );
 // Please make a plot to tell when Pi is close to a constant
      
     //while(temp > error){

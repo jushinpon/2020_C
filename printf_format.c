@@ -22,17 +22,17 @@ int main(void)
  //float
  
  //printf("1. %f\n",b[0]);
- //printf("2. %5.2f\n",b[0]);
+ //printf("2. %5.0f\n",b[0]);
  //printf("3. %-5.2f\n",b[0]);
  //printf("4. %-5.1f\n",b[1]);
- //printf("5. %05f\n",b[0]); 
+ //printf("5. %020f\n",b[0]); 
  //printf("6. %+f %+f \n",b[0],b[1]);// show the sign + and -
  //printf("7. %f %f\n",b[0],b[1]);
  
  // string 
  
  printf("%s\n", Stars);
- printf("%0.*s\n", 3, Stars);// minmal: 0, maximal:3, * acceptes the integer 3 
+ printf("%0.*s\n", 5, Stars);// minmal: 0, maximal:3, * acceptes the integer 3 
  printf("%0.3s\n", Stars);// minmal: 0, maximal:3, * acceptes the integer 3 
  
  return 0;

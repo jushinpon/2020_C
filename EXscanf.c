@@ -5,9 +5,9 @@ int main()
     int a;
     float b;
     char c;
-    char d[255];
+    char d[255];//string
     
-    //printf("address of a: %p\n",&a);
+    //printf("address of a: %p\n",&a);//pointer
     //printf("address of b: %p\n",&b);
     //printf("address of c: %p\n",&c);
     //printf("address of d: %p\n",&d);
@@ -20,13 +20,13 @@ int main()
     //scanf("%d", &a);// & means to get the ram address of a
     //printf("Please give a floating-point number: ");
     //scanf("%f", &b);
-    //
-    //printf("Your input integer,floating-point number, and character: %d, %f, %c\n", a,b,c);
+    ////
+    //printf("Your input integer,floating-point number %d and %f\n", a,b);
     
     printf("Please give a string: ");
-    //scanf("%s", &d);
+    //scanf("%s", d);
     scanf("%[^\n]", d);// [^] means not, so [^\n] means not "new line symbol". or read until "\n"
-    //       
+    ////       
     printf("Your input string: %s\n", d);
     return 0;
 }

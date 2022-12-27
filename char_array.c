@@ -6,6 +6,7 @@
 
 int main(void) {
     char text[] = "hello"; //text (the array name) is a ram address
+    char text1[] = "world"; //text (the array name) is a ram address
 	printf("The content of string is %s.\n",text); //%s is a output type for string 
     int length = sizeof(text) / sizeof(text[0]);	
     printf ("How many elements in the array: %d\n",length);
@@ -15,9 +16,12 @@ int main(void) {
         if(text[i] == '\0') {
             printf("null");
         } else {
+            
             printf("%c ", text[i]);
+            text[i] = text1[i];
         }
     }
+    printf("text: %s\n",text);
     printf("\n");
 
     return 0;

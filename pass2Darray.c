@@ -10,8 +10,8 @@
 #include <stdio.h>
 #include <stdlib.h> //atoi,system functions
 #include <time.h>
-int twoDarray(int row, int col,float twoD[][col-1]){
-//int twoDarray(int row, int col,float twoD[row][col-1]){
+//int twoDarray(int row, int col,float twoD[][col-1]){
+int twoDarray(int row, int col,float twoD[row][col-1]){
 	printf ("twoD: %p\n",twoD);
 	printf ("twoD[0][0]: %p\n",&twoD[0][0]);
 	printf ("twoD[0]: %p\n",twoD[0]);
@@ -84,9 +84,11 @@ int main(){
 	fclose(fpr);// remember to close the handle!!!	
 	fclose(fpw);
 	printf ("grade: %p\n",grade);
+	printf ("size of grade: %d\n",sizeof(grade));
+	printf ("size of grade[0]: %d\n",sizeof(grade[0]));
 	printf ("grade[0][0]: %p\n",&grade[0][0]);
 	printf ("grade[0]: %p\n",grade[0]);//pointer of the first one-dimensional array
-	twoDarray(row,col,grade);	
+	twoDarray(row,col,grade);//[10000][4]*4 	
 	return 0;	
 }
 

@@ -6,13 +6,13 @@ int main()
    float A,B,C,D;
    //double A,B,C,D;
    int remainder;
-   //A = 1.2;
-   //B= exp(A);
-   ////double pow(double x, double y)
-   //C= pow(9,1./2.);// try 1./2. // If you want to have your code effective, use "multiply" instead of power if possible 
-   //D= sqrt(9);
-   //remainder = 5%3; // this is frequently used in looping
-   //printf("%f %f %f %f %f\n",A,B,C,D,(float)remainder);//(int) can be used to convert a float (%f) to int(%d)
+  // A = 1.2;
+  // B= exp(A);
+  // //double pow(double x, double y)
+  // C= pow(9,1./2.);// try 1./2. // If you want to have your code effective, use "multiply" instead of power if possible 
+  // D= sqrt(9);
+  // remainder = 5%3; // this is frequently used in looping
+  // printf("%f %f %f %f %f\n",A,B,C,D,(float)remainder);//(int) can be used to convert a float (%f) to int(%d)
 
 // Trigonometric function **** in radians
    //....... sin(x), cos(x) --> x is in radian (£k=180«×)
