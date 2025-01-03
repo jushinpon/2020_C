@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void b(void)
+int b()
 {
 	printf("b\n");
 }

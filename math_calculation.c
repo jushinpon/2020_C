@@ -8,9 +8,9 @@ int main()
    int remainder;
   // A = 1.2;
   // B= exp(A);
-  // //double pow(double x, double y)
-  // C= pow(9,1./2.);// try 1./2. // If you want to have your code effective, use "multiply" instead of power if possible 
-  // D= sqrt(9);
+  //// //double pow(double x, double y)
+  // C= pow(9.,1.0/2.0);// try 1./2. // If you want to have your code effective, use "multiply" instead of power if possible 
+  // D= sqrt(9.);
   // remainder = 5%3; // this is frequently used in looping
   // printf("%f %f %f %f %f\n",A,B,C,D,(float)remainder);//(int) can be used to convert a float (%f) to int(%d)
 
@@ -21,7 +21,7 @@ int main()
       B = sin(3.1415926);
       C = acos(-1.0);   
       D = sin(C);
-	printf("%f %f %f %f \n",A,B,C,D); 
+	  printf("%f %f %f %f \n",A,B,C,D); 
 // you can now convert degree to radin or revsersely by acos(-1)/180. (not 180, using "180." is better.)	
    return 0;
 }      	

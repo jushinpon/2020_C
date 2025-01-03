@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-void b(void);
+int b();
 
-void a(void)
+int a()
 {
 	printf("a\n");
 	b(); 

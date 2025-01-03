@@ -10,9 +10,9 @@ int addone(int m,int* arr,int* afteradd){
 		printf("After add: %d-> %d, , %%p: %p \\n\n",i,afteradd[i],&afteradd[i]);
 	}
 }
-int main(void) {
+int main() {
     int arr[10] = {0};
-    int add[10]= {0},m=1;
+    int add[10]= {0},m=10;
     printf("arr :\t\t%p\n", arr);
     printf("size of arr :\t\t%d\n", sizeof(arr));
     printf("&arr[0] :\t%p\n", &arr[0]);

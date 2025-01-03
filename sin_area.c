@@ -6,8 +6,8 @@ int main()
    int i,tot;// counter
    float pi,increment,rad;
    tot = 10000;// 10000 segment for 2*pi
-   pi = acos(-1);
-   increment = 2.*pi/(float)(tot);
+   pi = acos(-1.0);
+   increment = 2.0*pi/(float)(tot);
    
    fp = fopen("./sin.txt","w");
    
@@ -23,10 +23,12 @@ int main()
    
 //   fprintf(fp,"rad sinbararea\n");
 //   //fprintf(fp,"rad sin cos\n");
-	for(i=0;i<=tot;i++){
+     sum = 0.0;
+	for(i=0;i<tot;i++){
 		rad = increment*(float)i;
 		//fprintf(fp,"%f %f %f\n",rad,sin(rad),cos(rad));
-		fprintf(fp,"%f %f\n",rad,sin(rad));
+		
+		fprintf(fp,"%f %f\n",rad,(float)i*sin(rad));
 		//fprintf(fp,"%f %f\n",rad,sin(rad)*increment);
 	}
       

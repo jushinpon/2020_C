@@ -16,9 +16,14 @@ int main() {
        //x = (float) rand();// between 0 and RAND_MAX (2147483647)
        //printf("%d, value: %d\n", i,rand());
         //printf("Number: %d, x = %f\n",i,x);
-		 x = (float) rand() / RAND_MAX; //values between 0~1
+		 x1 = (float) rand() / RAND_MAX; //values between 0~1
          //printf("Number: %d, x = %f\n",i,x);		 
-         //printf("Number: %d, x = %f\n",i,2.0*x - 1.);		 
+         printf("Number: %d, x1 = %f\n",i,2.0*x1 - 1.);	
+         y1 = (float) rand() / RAND_MAX; //values between 0~1
+         //printf("Number: %d, x = %f\n",i,x);		 
+         printf("Number: %d, y1 = %f\n",i,2.0*y1 - 1.);	 
+         
+         
      //  RandNo = (int) (x*n + 1);//pick a number randomly from 1~n		 
 	//	 printf("Number: %d, RandNo = %d\n",i,RandNo); 	
   }

@@ -1,20 +1,20 @@
 #include <stdio.h>
 
-int main(void) {
+int main() {
     
-	int a = 9;
+	int a = 9; //4 bytes
     int *ap = &a;//& is the operator to get the address
     //int b = *ap; //--->*Pointer get the value in the address (Pointer), don't be confused!!!
     int *b = ap; 
      
-    printf("1. a: %d, at address: %p or %p\n",a,ap,&a);
+    //printf("1. a: %d, at address: %p or %p\n",a,ap,&a);
     //printf("1. b: %d, at address: %p\n\n\n",b,&b);
-    printf("1. b: %d, at address: %p\n\n\n",*b,b);
+    printf("1. b: %d, at address: %p\n\n\n",b,b);
     
     //b=10;
     //printf("2. a: %d, at address: %p or %p\n",a,ap,&a);
     //printf("2. b: %d, at address: %p\n",b,&b);
-   
+    
     *b = 20;
     printf("2. a: %d, at address: %p or %p\n",a,ap,&a);
     printf("2. b: %d, at address: %p\n",*b,b);

@@ -6,9 +6,9 @@ int main(){
 
 printf("%p, %p, and %d\n",a,&a[0],*a);
 	
-//for(int i=0;i<5;i++){
-//	printf("%d, %p\n",a[i],&a[i]);	
-//}
+for(int i=0;i<5;i++){
+	printf("%d, %p\n",a[i],&a[i]);	
+}
 
 //prt1 = a + 5;// shift 5 integer units in RAM
 //for(prt=a;prt < prt1;prt++){

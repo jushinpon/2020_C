@@ -5,18 +5,20 @@
 
 //int Area(int,int);//like a function
 //int Area(int x,int y){
-//float z;
-//z = x * y;
-//printf("Area: %f\n",z);
-//return 0;	
+//	float z;
+//	z = x * y;
+//	printf("Area: %f\n",z);
+//	//return 0;	
 //}
 
 int Area(int,int,int*);//use pointer, like a subroutine
   
-void main(void)
+int main()
 {
 	int a=3,b=5;
 	int getarea = 0;
+	//printf("The area is %d\n", a*b);
+	//printf ("the value of test: %d\n", test);
 //1.	
 	//Area(a,b);// you don't want to get a value from subroutine
 //2.	
@@ -37,11 +39,11 @@ void main(void)
 	
 }
 
-//int Area(int x,int y){
-//float z;
-//z = x * y;
-//printf("Area: %f\n",z);
-//return 0;	
+//int Area(int x1,int y1){
+//	float z;
+//	z = x1 * y1;
+//	printf("Area: %f\n",z);
+////return 0;	
 //}
 
 //int Area(int x,int y){
@@ -50,6 +52,7 @@ void main(void)
 
 int Area(int x,int y,int *z){
 	*z = x * y;//you cannot use a pointer to do calculation directly. * is used to convert pointer to the variable itself
+	
 	return x*y;
 }
 

@@ -1,6 +1,6 @@
 #include <stdio.h>
-//void swap(int a, int b);// function prototype
-void swap(int *, int *);
+//int swap(int a, int b);// function prototype
+int swap(int *, int *);
 
 int main(){
 	int a = 3;
@@ -19,7 +19,7 @@ int main(){
 }
 
 
-//void swap(int a, int b){ 
+//int swap(int a, int b){ 
 //   int s = a;
 //	   a = b;
 //	   b = s;
@@ -28,7 +28,7 @@ int main(){
 //}
 
 
-void swap(int *a, int *b){ 
+int swap(int *a, int *b){ 
 	int s = *a;
 	*a = *b;
 	*b = s;	
